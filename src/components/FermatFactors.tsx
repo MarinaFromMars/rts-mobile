@@ -22,6 +22,9 @@ function FermatFactors() {
             />
             <button onClick={() => {
                 const {factors, foundIn} = fermatFactors(number)
+				if (factors == null){
+					alert ("deadline exposed")
+				}
                 setFoundIn(foundIn)
                 setFactors(factors)
             }} style={{backgroundColor: "#2191FB"}}>Calculate
