@@ -52,6 +52,20 @@ function Perceptron() {
             >
                 Learn
             </button>
+			<input
+                type={"number"}
+                inputMode={"numeric"}
+                style={{borderColor: "#157F1F"}}
+            />
+			<select
+                value={learningRate}
+                onChange={({target}) =>
+                    setLearningRate(Number.parseFloat(target.value))
+                }
+                placeholder={"Learning Rate"}
+                style={{outlineColor: "#157F1F"}}
+            >
+			
         </div>
     );
 }
